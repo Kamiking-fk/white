@@ -1,0 +1,488 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* ここからCSSスタート */
+
+body {
+  font-size: 15px;
+  font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+  line-height: 1.8;
+}
+
+header {
+  height: 152px;
+  margin-top: 60px;
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.header-left {
+  float: left;
+  padding-top: 5px;
+}
+
+.header-left h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.header-left p {
+  font-size: 18px;
+  color: #777777
+}
+
+.header-right {
+  float: right;
+  padding-top: 42px;
+}
+
+.fas {
+  margin-left: 10px;
+}
+
+.gnav li {
+  float: left;
+  font-size: 16.88px;
+  list-style: none;
+  padding: 0 15px;
+  position: relative;
+}
+
+.gnav li ul {
+  position: absolute;
+  top: 45px;
+  left: -5px;
+  height: 0;
+  visibility: hidden;
+}
+
+.gnav li a {
+  display: block;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: #777777
+}
+
+.gnav li li {
+  width: 200px;
+  border: solid 1px #f0f0f0;
+  padding: 10px 20px 0 20px;
+  box-shadow: 0.5px 0.5px #f0f0f0;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.gnav li:hover ul li {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gnav li a:hover {
+  color: #C49029;
+}
+
+.gnav {
+  padding: 5px 235px 0 0;
+}
+
+.search-wrapper {
+  height: 40px;
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.search {
+  height: 40px;
+  width: 0px;
+  background: url(icons8-検索-50.png) left center no-repeat;
+  background-size: 26px 26px;
+  padding-left: 30px;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: -7px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search {
+  width: 186px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  cursor: text;
+}
+
+.main-image {
+  margin: 0 auto;
+}
+
+.main-text {
+  width: 1040px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
+
+.main-text p {
+  font-size: 27px;
+  line-height: 1.8;
+  color: #777777
+}
+
+.blog-wrapper {
+  height: 1470px;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.blog-date {
+  float: left;
+  padding-top: 10px;
+}
+
+.blog-date a{
+  font-size: 16.88px;
+  color: #999999;
+  text-decoration: none;
+}
+
+.blog-title {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  padding-left: 230px;
+}
+
+.blog-title a {
+  text-decoration: none;
+}
+
+.text-title {
+  padding-bottom: 20px;
+}
+
+.text-title a {
+  font-size: 22.4px;
+  color: #111111
+}
+
+.text {
+  font-size: 16.88px;
+  color: #666666;
+  padding-bottom: 75px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-right: 95px;
+  padding-bottom: 108px;
+}
+
+.page-no  {
+  border: 1px solid #999999;
+  padding: 8px 18px;
+  margin-right: 12px;
+  font-size: 16.88px;
+  color: #777777;
+}
+
+.page-no span p {
+  color: #333333;
+  font-weight: bold;
+}
+
+.page-no a {
+  text-decoration: none;
+}
+
+.next-page {
+  text-decoration: none;
+  border: 1px solid #999999;
+  padding: 10px 20px;
+}
+
+.next-page a {
+  text-decoration: none;
+}
+
+.footer-widget-area {
+  height: 460px;
+  width: 1040px;
+  margin: 0 auto;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+
+.footer-widget-area .container {
+  display: flex;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 50px;
+  margin-right: 1.2rem;
+}
+
+.widget-profile-area {
+  width:250px;
+  padding-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.widget-profile-menu {
+  padding-top: 20px;
+}
+
+.name {
+  font-size: 18.99px;
+  font-weight: bold;
+  color: #333333
+}
+
+.sns-icon {
+  font-size: 1.4rem;
+  margin-right: 4px;
+}
+
+.sns-icon a {
+  color: #999;
+}
+
+.widget-profile-text {
+  font-size: 1.05rem;
+}
+
+.widget-text {
+  width:210px;
+  padding-top: 80px;
+  padding-left: 85px;
+}
+
+.widget-text .title {
+  font-size: 14.4px;
+  color: #333333;
+  font-weight: bold;
+  padding-bottom: 35px;
+}
+
+.widget-text .text {
+font-size: 15.84px;
+color: #666666;
+}
+
+.widget-nav1 {
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.widget-nav1 p {
+  font-size: 15.84px;
+  color: #666666;
+}
+
+.title1 {
+  font-size: 14.4px;
+  font-weight: bold;
+  color: #333333;
+  padding-bottom: 35px;
+}
+
+.list1 li {
+  list-style: none;
+}
+
+.list1 a {
+  font-size: 16.88px;
+  color: #666666;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.list1 P {
+  font-size: 14.64px;
+  color: #999999;
+  padding-bottom: 20px;
+}
+
+.widget-nav2 {
+  padding-top: 80px;
+  padding-left: 100px;
+  margin-bottom: 40px;
+}
+
+.title2 {
+  font-size: 14.4px;
+  font-weight: bold;
+  color: #333333;
+  padding-bottom: 35px;
+}
+
+.list2 li {
+  list-style: none;
+  padding-bottom: 14px;
+}
+
+.list2 a {
+  font-size: 16.88px;
+  color: #666666;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.w-search {
+  width: 200px;
+  height: 43px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  cursor: text;
+  margin-top: 75px;
+}
+
+footer .container {
+  height: 158px;
+  display: flex;
+}
+
+.footer-sns-link {
+  font-size: 1.5rem;
+  padding-top: 60px;
+}
+
+.footer-sns-link a {
+  color: #999;
+  margin-right: 4px;
+}
+
+.footer-copyright {
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.footer-copyright p {
+  font-size: 1.05rem;
+  color: #999999;
+}
+
+.footer-copyright a {
+  color: #333;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-copyright a:hover {
+  opacity: 1;
+}
