@@ -223,9 +223,7 @@ header {
 
 .main-image {
   margin: 0 auto;
-}
-
-.main-visual {
+  width: 100%;
   object-fit: cover;
 }
 
